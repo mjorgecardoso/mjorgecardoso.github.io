@@ -1,11 +1,17 @@
-@import url(fontawesome-all.min.css);
+/*@import url(fontawesome-all.min.css);*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+:root {
+  --lightpink-color: #da7b93;
+  --lightblue-color: #67d5d8; 
+  --faintpink-color: lighten(#da7b93, 50%);
+  --faintblue-color: lighten(#67d5d8, 50%); 
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -151,7 +157,7 @@ input, select, textarea {
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-bottom-colfhoveror 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
 		color: inherit;
@@ -2171,7 +2177,7 @@ input, select, textarea {
 			margin-right: auto;
 			width: 40%;
 			max-width: 500px;
-			min-width: 200px;
+			min-width: 300px;
 			height: 40%;
 		}
 
@@ -2809,14 +2815,14 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.65;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				/*background-color: rgba(36, 41, 67, 0.25);*/
 				content: '';
 				display: block;
 				height: 100%;
@@ -2828,19 +2834,19 @@ input, select, textarea {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 1;
 			}
 
 			.tiles article.is-transitioning {
-				-moz-transform: scale(0.95);
-				-webkit-transform: scale(0.95);
-				-ms-transform: scale(0.95);
-				transform: scale(0.95);
-				-moz-filter: blur(0.5em);
-				-webkit-filter: blur(0.5em);
-				-ms-filter: blur(0.5em);
-				filter: blur(0.5em);
-				opacity: 0;
+				-moz-transform: scale(0.98);
+				-webkit-transform: scale(0.98);
+				-ms-transform: scale(0.98);
+				transform: scale(0.98);
+				-moz-filter: blur(0.1em);
+				-webkit-filter: blur(0.1em);
+				-ms-filter: blur(0.1em);
+				filter: blur(0.1em);
+				opacity: 0.6;
 			}
 			.tiles article:nth-child(8n - 7){
 				width: 30%;
@@ -2868,29 +2874,29 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(8n - 7):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 			.tiles article:nth-child(8n - 6):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(8n - 5):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 			.tiles article:nth-child(8n - 4):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(8n - 3):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 
 			.tiles article:nth-child(8n - 2):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 			.tiles article:nth-child(8n - 1):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(8n):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2920,16 +2926,16 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(4n - 3):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}			
 			.tiles article:nth-child(4n - 2):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(4n - 1):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(4n):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 
 		}
@@ -2962,16 +2968,16 @@ input, select, textarea {
 					width: 50% !important;
 			}*/
 			.tiles article:nth-child(4n - 3):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}	
 			.tiles article:nth-child(4n - 2):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}
 			.tiles article:nth-child(4n - 1):before {
-				background-color: #67d5d8;
+				background-color: var(--lightblue-color);
 			}	
 			.tiles article:nth-child(4n):before {
-				background-color: #da7b93;
+				background-color: var(--lightpink-color);
 			}
 
 			.tiles article:nth-child(4n - 3) {
