@@ -2912,30 +2912,54 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			.tiles article:nth-child(4n - 3) {
-				width: 40% ;
+			.tiles article:nth-child(8n - 7) {
+				width: 30% ;
 			}			
-			.tiles article:nth-child(4n - 2) {
+			.tiles article:nth-child(8n - 6) {
+				width: 45%;
+			}
+			.tiles article:nth-child(8n - 5) {
+				width: 25% ;
+			}			
+			.tiles article:nth-child(8n - 4) {
+				width: 45%;
+			}
+			.tiles article:nth-child(8n - 3) {
+				width: 25% ;
+			}			
+			.tiles article:nth-child(8n - 2) {
+				width: 30%;
+			}
+			.tiles article:nth-child(8n - 1) {
 				width: 60%;
 			}
-			.tiles article:nth-child(4n - 1) {
-				width: 60%;
-			}
-			.tiles article:nth-child(4n) {
+			.tiles article:nth-child(8n) {
 				width: 40%;
 			}
 
-			.tiles article:nth-child(4n - 3):before {
+			.tiles article:nth-child(8n - 7):before {
 				background-color: var(--lightpink-color);
 			}			
-			.tiles article:nth-child(4n - 2):before {
+			.tiles article:nth-child(8n - 6):before {
 				background-color: var(--lightblue-color);
 			}
-			.tiles article:nth-child(4n - 1):before {
-				background-color: var(--lightblue-color);
-			}
-			.tiles article:nth-child(4n):before {
+			.tiles article:nth-child(8n - 5):before {
 				background-color: var(--lightpink-color);
+			}			
+			.tiles article:nth-child(8n - 4):before {
+				background-color: var(--lightblue-color);
+			}
+			.tiles article:nth-child(8n - 3):before {
+				background-color: var(--lightpink-color);
+			}			
+			.tiles article:nth-child(8n - 2):before {
+				background-color: var(--lightblue-color);
+			}
+			.tiles article:nth-child(8n - 1):before {
+				background-color: var(--lightpink-color);
+			}
+			.tiles article:nth-child(8n):before {
+				background-color: var(--lightblue-color);
 			}
 
 		}
@@ -2951,6 +2975,32 @@ input, select, textarea {
 
 			.tiles article h3 {
 				font-size: 1.4em;
+			}
+
+			.tiles article:nth-child(4n - 3):before {
+				background-color: var(--lightpink-color);
+			}	
+			.tiles article:nth-child(4n - 2):before {
+				background-color: var(--lightblue-color);
+			}
+			.tiles article:nth-child(4n - 1):before {
+				background-color: var(--lightblue-color);
+			}	
+			.tiles article:nth-child(4n):before {
+				background-color: var(--lightpink-color);
+			}
+
+			.tiles article:nth-child(4n - 3) {
+				width: 40% !important;
+			}	
+			.tiles article:nth-child(4n - 2) {
+				width: 60% !important;
+			}
+			.tiles article:nth-child(4n - 1) {
+				width: 60% !important;
+			}	
+			.tiles article:nth-child(4n) {
+				width: 40% !important;
 			}
 
 
@@ -2981,16 +3031,16 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(4n - 3) {
-				width: 45% !important;
+				width: 40% !important;
 			}	
 			.tiles article:nth-child(4n - 2) {
-				width: 55% !important;
+				width: 60% !important;
 			}
 			.tiles article:nth-child(4n - 1) {
-				width: 55% !important;
+				width: 60% !important;
 			}	
 			.tiles article:nth-child(4n) {
-				width: 45% !important;
+				width: 40% !important;
 			}
 
 		}
